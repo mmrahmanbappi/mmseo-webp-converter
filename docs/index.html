@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MMSEO WebP Converter â€“ Free WordPress Plugin with Backup &amp; One-Click Restore</title>
+<meta name="description" content="Free WordPress plugin that backs up first, converts your whole Media Library to compressed WebP, updates every image reference, and lets you restore everything with one click.">
+<link rel="canonical" href="https://mmrahmanbappi.github.io/mmseo-webp-converter/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MMSEO WebP Converter â€“ Backup, Convert to WebP, Restore">
+<meta property="og:description" content="Convert your WordPress Media Library to WebP safely. Full backup first, one-click restore.">
+<meta property="og:url" content="https://mmrahmanbappi.github.io/mmseo-webp-converter/">
+<meta property="og:image" content="https://mmrahmanbappi.github.io/mmseo-webp-converter/assets/screenshot-1-main.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"MMSEO WebP Converter","applicationCategory":"DeveloperApplication","operatingSystem":"WordPress 6.2+, PHP 7.4+","softwareVersion":"1.1.0","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://www.gnu.org/licenses/gpl-2.0.html","downloadUrl":"https://mmrahmanbappi.github.io/mmseo-webp-converter/downloads/mmseo-webp-converter-1.1.0.zip","screenshot":"https://mmrahmanbappi.github.io/mmseo-webp-converter/assets/screenshot-1-main.png","description":"Backs up first, converts the WordPress Media Library to compressed WebP, updates every reference and supports one-click restore."}
+</script>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#14213d;--muted:#5b6478;--brand:#2563eb;--brand2:#1d4ed8;--ok:#16a34a;--line:#e3e7ef}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1424;--card:#151d33;--ink:#eef2ff;--muted:#a4afc8;--line:#26304d}}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+a{color:var(--brand)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.hero{padding:64px 0 40px;text-align:center}
+.badge{display:inline-block;background:rgba(37,99,235,.12);color:var(--brand);padding:4px 12px;border-radius:999px;font-size:14px;font-weight:600}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.15;margin:16px 0 12px}
+.lead{font-size:19px;color:var(--muted);max-width:720px;margin:0 auto 28px}
+.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;padding:14px 28px;border-radius:10px;font-weight:700;font-size:17px}
+.btn:hover{background:var(--brand2)}
+.btn.alt{background:transparent;color:var(--brand);border:2px solid var(--brand);margin-left:8px}
+.meta{margin-top:14px;color:var(--muted);font-size:14px}
+section{padding:36px 0}
+h2{font-size:28px;margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;color:var(--muted)}
+.step{font-weight:800;color:var(--brand);font-size:14px;letter-spacing:.06em}
+figure{margin:0 0 28px;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+figure img{display:block;width:100%;height:auto}
+figcaption{padding:14px 18px;color:var(--muted);font-size:15px}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+td,th{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line)}
+th{width:34%;color:var(--muted);font-weight:600}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{margin:10px 0 0;color:var(--muted)}
+ul.tick{list-style:none;padding:0;margin:0}
+ul.tick li{padding-left:28px;position:relative;margin:8px 0}
+ul.tick li:before{content:"\2713";position:absolute;left:0;color:var(--ok);font-weight:800}
+footer{padding:36px 0 56px;color:var(--muted);text-align:center;font-size:14px;border-top:1px solid var(--line);margin-top:24px}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+  <span class="badge">Free &bull; GPL v2 or later &bull; Version 1.1.0</span>
+  <h1>MMSEO WebP Converter</h1>
+  <p class="lead">Convert your whole WordPress Media Library to compressed WebP&nbsp;&mdash; <strong>with a full backup first and one-click restore</strong> if you ever change your mind.</p>
+  <a class="btn" href="downloads/mmseo-webp-converter-1.1.0.zip" download>Download the plugin (ZIP)</a>
+  <a class="btn alt" href="#how">How it works</a>
+  <p class="meta">Needs WordPress 6.2+ &bull; PHP 7.4+ &bull; GD or Imagick with WebP support</p>
+</div></header>
+
+<main class="wrap">
+<section id="how">
+  <h2>How it works</h2>
+  <div class="grid">
+    <div class="card"><div class="step">STEP 1</div><h3>Backup</h3><p>Every original image, every thumbnail size and the related database tables are copied to a protected folder before anything changes.</p></div>
+    <div class="card"><div class="step">STEP 2</div><h3>Convert</h3><p>Each image and all its sizes become WebP at the quality you pick. Attachment IDs never change, so featured images and galleries keep working.</p></div>
+    <div class="card"><div class="step">STEP 3</div><h3>Update links</h3><p>Image paths are replaced in posts, excerpts, post meta (including Elementor data), term meta and options &mdash; serialized and JSON data stays valid.</p></div>
+    <div class="card"><div class="step">STEP 4</div><h3>Clean up</h3><p>Old files are deleted only after their WebP replacement is created and verified. If one image fails, its original is kept.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>See the design</h2>
+  <figure>
+    <img src="assets/screenshot-1-main.png" width="1400" height="1150" loading="lazy" alt="MMSEO WebP Converter admin screen showing the options, action buttons and the Backups and restore table with Restore and Delete backup buttons">
+    <figcaption><strong>The converter screen.</strong> Choose quality and options, press one button, and manage every backup in the &ldquo;Backups and restore&rdquo; table below.</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/screenshot-2-media.png" width="1400" height="900" loading="lazy" alt="WordPress Media Library after conversion, listing files that now end in .webp">
+    <figcaption><strong>After conversion.</strong> The Media Library now serves .webp files. Animated GIFs are left untouched.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>Why it is safe</h2>
+  <div class="card"><ul class="tick">
+    <li><strong>One-click restore.</strong> Puts back original files, image records and metadata, reverses the link changes and removes the WebP files it made.</li>
+    <li><strong>Every new file is verified</strong> (format and dimensions) before it is used.</li>
+    <li><strong>Skips</strong> animated GIFs, files already in WebP, and images where WebP would not be smaller.</li>
+    <li><strong>Works in small batches</strong> with a progress bar, so large libraries do not time out.</li>
+    <li><strong>Optional:</strong> auto-convert new uploads, and 301-redirect old image URLs to the new WebP files.</li>
+    <li><strong>Private backups</strong> in a protected folder with an unguessable name. Nothing is sent anywhere; the plugin makes no external requests.</li>
+    <li><strong>Tested</strong> against the official WordPress Plugin Check rules and a strict restore test that compares every file, record and post before and after.</li>
+  </ul></div>
+</section>
+
+<section>
+  <h2>Details</h2>
+  <table>
+    <tr><th>Version</th><td>1.1.0</td></tr>
+    <tr><th>Requires</th><td>WordPress 6.2 or higher, PHP 7.4 or higher</td></tr>
+    <tr><th>Tested up to</th><td>WordPress 7.1</td></tr>
+    <tr><th>Image types</th><td>JPEG, PNG, GIF (static), BMP &mdash; TIFF needs Imagick</td></tr>
+    <tr><th>License</th><td>GPL v2 or later</td></tr>
+    <tr><th>Price</th><td>Free</td></tr>
+  </table>
+  <p style="text-align:center;margin-top:24px"><a class="btn" href="downloads/mmseo-webp-converter-1.1.0.zip" download>Download MMSEO WebP Converter 1.1.0</a></p>
+</section>
+
+<section>
+  <h2>Install in 3 steps</h2>
+  <div class="card"><ol style="margin:0;padding-left:20px">
+    <li>In WordPress go to <strong>Plugins &rarr; Add New &rarr; Upload Plugin</strong> and choose the ZIP.</li>
+    <li>Click <strong>Install Now</strong>, then <strong>Activate</strong>.</li>
+    <li>Open <strong>MMSEO WebP</strong> in the admin menu and press <strong>Backup, then convert everything</strong>.</li>
+  </ol></div>
+</section>
+
+<section>
+  <h2>Questions</h2>
+  <details><summary>Can I undo the conversion?</summary><p>Yes. Open MMSEO WebP, find the run under &ldquo;Backups and restore&rdquo; and click Restore. Your original files, records and links come back.</p></details>
+  <details><summary>Will my posts lose their images?</summary><p>No. Attachment IDs are unchanged and every reference is updated. With the redirect option on, old image URLs also redirect to the WebP file.</p></details>
+  <details><summary>Where are backups stored?</summary><p>In a protected folder with a random name inside your uploads folder. You can delete a backup from the plugin screen when you are happy. Backups are kept when you delete the plugin unless you tick the option to remove them.</p></details>
+  <details><summary>Any limits?</summary><p>WebP files made with GD do not carry EXIF data (the metadata stored in WordPress is kept). Links stored in custom database tables are not rewritten; the redirect option covers those. Always keep your own full-site backup too.</p></details>
+</section>
+</main>
+
+<footer><div class="wrap">MMSEO WebP Converter &copy; 2026 &bull; Released under the GPL v2 or later &bull; <a href="downloads/mmseo-webp-converter-1.1.0.zip" download>Download</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.mmseo-webp__title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.mmseo-webp__barwrap {
+	max-width: 700px;
+	height: 22px;
+	background: #dcdcde;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.mmseo-webp__bar {
+	width: 0;
+	height: 100%;
+	background: #2271b1;
+	transition: width 0.2s ease;
+}
+
+.mmseo-webp__log {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	padding: 10px;
+	min-height: 60px;
+	max-height: 340px;
+	overflow: auto;
+	white-space: pre-wrap;
+}
+
+.mmseo-webp__runs {
+	max-width: 900px;
+}
+
+.mmseo-webp__runs .button {
+	margin-right: 6px;
+}
